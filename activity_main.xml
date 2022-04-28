@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Часики)"
+		android:textSize="20sp"
+		android:layout_marginTop="20dp"
+		android:id="@+id/analog_text"
+		android:textStyle="bold|italic|normal"
+		android:textColor="#FF9C00FF"/>
+
+	<AnalogClock
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginTop="20dp"
+		android:id="@+id/analog_clock"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Digital ОригиNAL"
+		android:layout_centerHorizontal="true"
+		android:textSize="20sp"
+		android:layout_marginTop="20dp"
+		android:id="@+id/digital_text"
+		android:textStyle="bold|italic"
+		android:textColor="#FF63FF00"/>
+
+	<DigitalClock
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="30sp"
+		android:layout_marginTop="20dp"
+		android:layout_below="@id/digital_text"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/digital_clock"
+		android:textStyle="bold|italic"
+		android:gravity="center"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Секундомер Чё°то-там((("
+		android:textSize="40sp"
+		android:textColor="#FFCE00FF"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="0:00:00"
+		android:textSize="92sp"
+		android:id="@+id/time_view"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Старт"
+		android:id="@+id/btnStart"
+		android:onClick="onClickStart"
+		android:textStyle="bold|italic"
+		android:textColor="#FF00FF63"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time_view"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Стоп"
+		android:id="@+id/btnStop"
+		android:onClick="onClickStop"
+		android:textStyle="bold|italic"
+		android:textColor="#FFFF004C"
+		android:layout_below="@+id/btnStart"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="ХардРезет"
+		android:id="@+id/btnReset"
+		android:onClick="onClickReset"
+		android:textStyle="bold|italic"
+		android:textColor="#FF00A6FF"/>
+
+</LinearLayout>
+
